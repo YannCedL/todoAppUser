@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  database:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=locymd312
+      - POSTGRES_DB=todoappuser_db_1
